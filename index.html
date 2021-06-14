@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Book App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body class="body-home" onload="fetchContacts()">
+
+    <div id="main-content">
+
+        <div class="container-fluid">
+            <div class="col-12">
+                <h3 class="heading-home">My Contact Book <strong style="color: red">+Plus</strong></h3>
+            </div>
+        </div>
+
+        <div id="table" style="color: white">Contacts loading...</div>
+
+        <button id="addContact" type="button">Add Contact</button>
+        <button id="refresh" type="button">Refresh</button>
+
+
+    </div>
+    <script src="config.js"></script>
+    <script>
+        document.getElementById("addContact").addEventListener('click', addContact);
+        document.getElementById("refresh").addEventListener('click', fetchContacts);
+
+
+        function fetchContacts() {
+            fetch(rootPath + "controller/get-contacts/")
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    dispalyOutput(data);
+                    //console.log(data);
+                })
+        }
+
+        function dispalyOutput(data) {
+            output = "<table>";
+
+            for (a in data) {
+                output += `
+                        <tr onclick="editContact(${data[a].id})">
+                            <td><img src="${rootPath}controller/uploads/${data[a].avatar}" width="150" id="book-img"/></td>
+                            <td><h5>${data[a].firstname}</h5></td>
+                            <td><h5>${data[a].lastname}</h5></td>
+                        </tr>
+                    `
+            }
+            output += "</table>";
+            document.getElementById("table").innerHTML = output;
+        }
+
+        function addContact() {
+            window.open("addcontact.html", "_self");
+        }
+
+        function editContact(id) {
+            window.open("edit-contact.html?id=" + id, "_self");
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+#main-content {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*========== Home ========== */
+
+.body-home {
+    background-image: url(img/home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*========== ENTER-API-KEY ========== */
+
+.body-api {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url(img/Enter-API.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*========== ADD CONTACT ========== */
+.body-addcontact{
+    background-image: linear-gradient(rgba(2, 2, 2, 0.65), rgba(0, 0, 0, 0.76)),url(img/Add-contact.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*========== EDIT CONTACT ========== */
+
+.body-edit{
+    background-image: linear-gradient(rgba(2, 2, 2, 0.45), rgba(28, 85, 128, 0.65)),url(img/Edit-Contact.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/*========================================= ENTER-API-KEY =========================================*/
+
+.heading-api {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10rem;
+    padding-bottom: 1.2rem;
+
+
+}
+
+#apiKey {
+    width: 40%;
+    font-weight: 700;
+}
+
+.plus {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 3rem;
+    background-color: rgba(13, 13, 13, 0.76);
+    padding: 5px 0;
+
+}
+
+
+#submitApiKey {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 1.3rem;
+    border-radius: 5px 30px;
+    padding: 5px 15px;
+    background-color: rgb(255, 0, 10);
+    color: white;
+    transition: 0.25px;
+
+}
+
+#submitApiKey:hover {
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 30px 5px;
+    background-color: rgb(0, 255, 20);
+}
+
+/*========================================= HOME-PAGE =========================================*/
+
+.heading-home {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background-color: rgba(13, 13, 13, 0.76);
+    padding: 5px 0;
+}
+
+table {
+    width: 80%;
+    color: white;
+    font-style: italic;
+    margin: 8rem 0 2rem 10%;
+    border: 2px solid black;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.73);
+}
+
+tr,td {
+    border: 1px solid #fff8f8;
+    padding: 10px;
+}
+
+#refresh {
+    position: absolute;
+    top: 7rem;
+    margin-left: 5%;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5px 30px;
+    padding: 5px 15px;
+    background-color: rgb(255, 0, 10);
+    color: white;
+    transition: 0.25px;
+
+}
+
+#refresh:hover {
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px 5px;
+    background-color: rgb(0, 255, 20);
+}
+
+#addContact {
+    position: absolute;
+    top: 7rem;
+    margin-left: -18%;
+    
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 30px 5px;
+    padding: 5px 15px;
+    background-color: rgb(20, 0, 255);
+    color: white;
+    transition: 0.25px;
+}
+
+#addContact:hover {
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius:  5px 30px;
+    background-color: rgb(0, 255, 20);
+}
+
+#book-img {
+    
+}
+
+/*========================================= ADD CONTACT-PAGE =========================================*/
+.heading-adds{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 5px 0;
+    
+}
+
+
+#editForm{
+    color: white;
+    width: 70%;
+    padding: 50px 0 20px 0;
+    margin-left: 15%;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 10px 15rem;
+}
+
+#submitForm {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 30px 5px;
+    padding: 5px 15px;
+    background-color: rgb(20, 0, 255);
+    color: white;
+    transition: 0.25px;
+    box-shadow: 2px 3px white;
+}
+
+#submitForm:hover {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 700;
+    
+    border-radius: 5px 30px;
+    background-color: rgb(0, 255, 196);
+}
+
+#homeLink {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 30px 5px;
+    padding: 5px 15px;
+    background-color: rgb(255, 157, 0);
+    color: white;
+    transition: 0.25px;
+    box-shadow: 2px 3px white;
+    margin-bottom: 5rem;
+}
+
+#homeLink:hover {
+    color: rgb(255, 157, 0);
+    font-size: 1.1rem;
+    font-weight: 700;
+    
+    border-radius: 5px 30px;
+    background-color: #ffffff;
+}
+
+/*========================================= EDIT CONTACT-PAGE =========================================*/
+
+#avatarImage {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+#editContact {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 30px 5px;
+    padding: 5px 15px;
+    background-color: #1300fa;
+;
+    color: white;
+    transition: 0.25px;
+    box-shadow: 2px 3px white;
+    margin-bottom: 5rem;
+}
+
+#editContact:hover {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 5px 30px;
+    background-color: rgb(0, 255, 20);
+}
+
+
+#deleteContact {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 30px 5px;
+    padding: 5px 15px;
+    background-color: rgb(255, 34, 6);
+    color: white;
+    transition: 0.25px;
+    box-shadow: 2px 3px white;
+    margin-bottom: 5rem;
+}
+
+#deleteContact:hover {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 5px 30px;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
